@@ -50,7 +50,7 @@ class LoggingMiddleware(object):
             return start_response(status, replaced_headers)
         self.context.push([])
         result = self.app(environ, start)
-        if html:
+        if html[0]:
             return self.inject_log_html(result)
         return result
 

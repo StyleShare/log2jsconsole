@@ -4,13 +4,13 @@ log2jsconsole
 .. image:: http://i.imgur.com/jkYMB.png
 
 It provides a simple WSGI middleware that helps to log messages into
-JavaScript ``console`` object. For example, if you log a message like::
+JavaScript ``console`` object. For example, if you log messages like::
 
     logger = logging.getLogger('my.logger')
     logger.warning('warning message')
     logger.debug('debug message')
 
-The middleware automatically append a code like following JavaScript::
+The middleware automatically appends codes like following JavaScript::
 
     <script>
     // <![CDATA[

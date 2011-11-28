@@ -4,7 +4,7 @@ log2jsconsole
 .. image:: http://i.imgur.com/jkYMB.png
    :alt: Safari Web Inspector
 
-.. imgge:: http://i.imgur.com/AWba1.png
+.. image:: http://i.imgur.com/AWba1.png
    :alt: Opera Dragonfly
 
 It provides a simple WSGI middleware that helps to log messages into

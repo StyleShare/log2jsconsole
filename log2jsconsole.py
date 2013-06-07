@@ -36,7 +36,7 @@ class LoggingMiddleware(object):
 
     def __call__(self, environ, start_response):
         html = [False]
-        def start(status, headers):
+        def start(status, headers, exc_info=None):
             headers = list(headers)
             replaced_headers = []
             for k, v in headers:
@@ -86,3 +86,7 @@ class LoggingMiddleware(object):
             yield ');'
         yield '\n}\n// ]]>\n</script>'
 
+
+def make_middleware(app, global_conf, **kwargs):
+    auto_install = kwargs.get('auto_install')
+    return LoggingMiddleware(app, auto_install)

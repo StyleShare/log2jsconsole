@@ -47,3 +47,12 @@ Assume that your WSGI application name is ``app``::
 
     app = LoggingMiddleware(app)
 
+Or you can add this as a filter of `Python Paste`_:
+
+.. code-block:: ini
+
+   [filter:log]
+   use = egg:log2jsconsole
+   auto_install = True
+
+.. _Python Paste: http://pythonpaste.org/

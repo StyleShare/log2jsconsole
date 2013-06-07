@@ -11,7 +11,7 @@ except IOError:
 
 
 setup(name='log2jsconsole',
-      version='0.3',
+      version='0.4',
       description='Simple WSGI middleware that helps to log messages into '
                   'JavaScript console object',
       long_description=readme,

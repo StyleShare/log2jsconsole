@@ -36,7 +36,7 @@ class LoggingMiddleware(object):
 
     def __call__(self, environ, start_response):
         html = [False]
-        def start(status, headers):
+        def start(status, headers, exc_info=None):
             headers = list(headers)
             replaced_headers = []
             for k, v in headers:

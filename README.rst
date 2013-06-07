@@ -64,7 +64,7 @@ Changelog
 Version 0.4
 ```````````
 
-To be released.
+Released on June 7, 2013.
 
 - Support for `Python Paste`_ filter entry point. [`#1`_ by Roberto De Almeida]
 - Fixed incompatibile signature (according to PEP 333) of ``start_response``.

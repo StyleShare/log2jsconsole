@@ -56,3 +56,40 @@ Or you can add this as a filter of `Python Paste`_:
    auto_install = True
 
 .. _Python Paste: http://pythonpaste.org/
+
+
+Changelog
+---------
+
+Version 0.4
+```````````
+
+To be released.
+
+- Support for `Python Paste`_ filter entry point. [`#1`_ by Roberto De Almeida]
+- Fixed incompatibile signature (according to PEP 333) of ``start_response``.
+  [`#1`_ by Roberto De Almeida]
+
+.. _#1: https://github.com/StyleShare/log2jsconsole/pull/1
+
+
+Version 0.3
+```````````
+
+Released on November 28, 2011.
+
+- Fixed a bug of ``Content-Type`` detection.
+
+
+Version 0.2
+```````````
+
+Released on November 28, 2011.
+
+- Fixed a bug of ``Content-Type`` detection.
+
+
+Version 0.1
+```````````
+
+Initially released on November 26, 2011.

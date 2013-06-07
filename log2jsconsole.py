@@ -86,3 +86,7 @@ class LoggingMiddleware(object):
             yield ');'
         yield '\n}\n// ]]>\n</script>'
 
+
+def make_middleware(app, global_conf, **kwargs):
+    auto_install = kwargs.get('auto_install')
+    return LoggingMiddleware(app, auto_install)

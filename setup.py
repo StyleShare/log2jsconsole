@@ -20,5 +20,9 @@ setup(name='log2jsconsole',
       author_email='dahlia' '@' 'stylesha.re',
       url='https://github.com/StyleShare/log2jsconsole',
       py_modules=['log2jsconsole'],
-      install_requires=['Werkzeug'])
+      install_requires=['Werkzeug'],
+      entry_points="""
+      [paste.filter_app_factory]
+      main = log2jsconsole:make_middleware
+      """)
 
